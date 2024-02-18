@@ -6,7 +6,7 @@ NC='\033[0m' # No Color
 
 # checks that the current directory that user is in, is inside the $ZKSYNC_HOME.
 # We depend on this variable in multiple places - so running from a different directory might have
-# some surprising side effects (like loading wrong binaries etc).
+# some surprising side effects .
 check_subdirectory() {
     if [[ -z "$ZKSYNC_HOME" ]]; then
         echo -e "${RED}Error: ZKSYNC_HOME is not set.${NC}"
